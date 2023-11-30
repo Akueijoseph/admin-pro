@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Face Recognition Access Control</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    
+    h1 {
+      margin-top: 50px;
+    }
+    
+    #video-container {
+      margin-top: 50px;
+    }
+    
+    #access-message {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Face Recognition Access Control</h1>
+  <div id="video-container">
+    <video id="video" width="300" height="225" autoplay></video>
+  </div>
+  <div id="access-message"></div>
+
+  <script>
+    // Function to handle access control results
+    function handleAccessResult(accessGranted) {
+      var accessMessage = document.getElementById("access-message");
+      if (accessGranted) {
+        accessMessage.textContent = "Access Granted";
+        accessMessage.style.color = "green";
+      } else {
+        accessMessage.textContent = "Access Denied";
+        accessMessage.style.color = "red";
+      }
+    }
+    
+    // Function to capture video stream from the smartphone camera
+    function captureCamera() {
+      navigator.mediaDevices.getUserMedia({ video: true })
+        .then(function(stream) {
+          var videoElement = document.getElementById("video");
+          videoElement.srcObject = stream;
+          
+          // Call the face recognition API and pass the video stream
+          // for face detection and recognition
+          // Replace `API_ENDPOINT` with the actual endpoint URL
+          fetch("API_ENDPOINT", {
+              method: "POST",
+              body: stream
+            })
+            .then(function(response) {
+              return response.json();
+            })
+            .then(function(data) {
+              // Handle the access control result
+              handleAccessResult(data.accessGranted);
+            })
+            .catch(function(error) {
+              console.error("An error occurred:", error);
+            });
+        })
+        .catch(function(error) {
+          console.error("Unable to access the camera:", error);
+        });
+    }
+    
+    // Capture video from the smartphone camera when the page loads
+    window.addEventListener("load", captureCamera);
+  </script>
+</body>
+</html>
