@@ -8,12 +8,13 @@
 
 > A modern, responsive, and feature-rich Angular admin dashboard template built with the latest technologies. Perfect for enterprise applications, SaaS platforms, and client demos.
 
-![AdminPro Dashboard Preview](https://org-public-assets.s3.us-west-2.amazonaws.com/Free-Version-Banners/GITHUB-FREE-ANGULAR-REPO%20-%20AdminPro.jpg)
+![AdminPro Dashboard Preview](/src/assets/images/dashboard.png)
+![AdminPro Dashboard Preview](/src/assets/images/charts.png)
 
-## 🚀 **Live Demo**
+<!-- ## 🚀 **Live Demo**
 
 - **Free Version**: [View Live Demo](https://codedthemes.com/demos/admin-templates/adminpro/angular/free/dashboard)
-- **Pro Version**: [View Pro Demo](https://codedthemes.com/demos/admin-templates/adminpro/angular/default/)
+- **Pro Version**: [View Pro Demo](https://codedthemes.com/demos/admin-templates/adminpro/angular/default/) -->
 
 ## ✨ **Key Features**
 
@@ -63,8 +64,8 @@
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/codedthemes/adminpro-free-angular-admin-template.git
-   cd adminpro-free-angular-admin-template
+   git clone https://github.com/Fenil-Shingala/admin-pro.git
+   cd admin-pro
    ```
 
 2. **Install dependencies**
@@ -128,7 +129,6 @@ $danger-color: #f44236;
 - Fixed sidebar navigation
 - Collapsible menu
 - Responsive header
-- Customizable footer
 
 ## 📱 **Responsive Design**
 
@@ -195,32 +195,12 @@ This template is perfect for demonstrating:
 - **Code Comments**: Inline code documentation
 - **Setup Guides**: Step-by-step installation instructions
 
-## 🤝 **Contributing**
-
-We welcome contributions! Please feel free to submit a Pull Request.
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## 📄 **License**
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## 🙏 **Acknowledgments**
 
 - **Angular Team** for the amazing framework
 - **Bootstrap Team** for the responsive CSS framework
 - **ApexCharts** for beautiful chart components
 - **CodedThemes** for the original design inspiration
-
-## 📞 **Support**
-
-- **Documentation**: [AdminPro Documentation](https://codedthemes.gitbook.io/adminpro-angular/)
-- **Issues**: [GitHub Issues](https://github.com/codedthemes/adminpro-free-angular-admin-template/issues)
-- **Support**: [Support Hub](https://codedthemes.support-hub.io)
 
 ## 🌟 **Show Your Support**
 
